@@ -1,0 +1,81 @@
+ .animated { 
+            background-image: url(/css/img/burger.png); 
+            background-repeat: no-repeat;
+            background-position: center; 
+            padding-top:95px;
+            margin-bottom:60px;
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s; 
+            -webkit-animation-fill-mode: both; 
+            animation-fill-mode: both; 
+         }
+         
+         @-webkit-keyframes bounce { 
+            0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);} 
+            40% {-webkit-transform: translateY(-30px);} 
+            60% {-webkit-transform: translateY(-15px);} 
+         } 
+         
+         @keyframes bounce { 
+            0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
+            40% {transform: translateY(-30px);} 
+            60% {transform: translateY(-15px);} 
+         }
+         
+         .bounce { 
+            -webkit-animation-name: bounce; 
+            animation-name: bounce; 
+         }
+
+body {
+    background: #e59d05;
+}
+
+h1 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+}
+
+.burgerImage {
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: auto;
+    display: block;
+}
+
+#title {
+    font-family: 'Pacifico', cursive;
+    padding-bottom: 20px;
+}
+
+.devouredBurger {
+    height: 30px;
+    background: #fff;
+    margin: 3px;
+    text-align: center;
+    padding: 3px;
+    color: #d3d3d3;
+    width: 90%;
+    margin-left: 30px;
+}
+
+.newBurger {
+    height: 30px;
+    background: #fff;
+    margin: 3px;
+    text-align: left;
+    padding: 3px;
+    width: 70%;
+    margin-left: 30px;
+}
+
+#devour {
+    display: inline-block;
+ 
+}
