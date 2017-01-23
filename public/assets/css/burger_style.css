@@ -1,5 +1,5 @@
  .animated { 
-            background-image: url(/css/img/burger.png); 
+            background-image: url("/css/img/burger.png"); 
             background-repeat: no-repeat;
             background-position: center; 
             padding-top:95px;
