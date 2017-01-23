@@ -1,5 +1,5 @@
  .animated { 
-            background-image: url("/css/img/burger.png"); 
+            background-image: url("/img/burger.png"); 
             background-repeat: no-repeat;
             background-position: center; 
             padding-top:95px;
@@ -31,8 +31,9 @@ body {
     background: #e59d05;
 }
 
-h1 {
-    font-family: 'Open Sans Condensed', sans-serif;
+h1, #title {
+    font-family: 'Pacifico', cursive;
+    padding-bottom: 20px;
     text-align: center;
 }
 
@@ -41,20 +42,16 @@ h2 {
     text-align: center;
 }
 
-.burgerImage {
-    height: 200px;
-    border: 2px solid black;
-    border-radius: 5px;
-    margin: auto;
-    display: block;
+.Burgers {
+
 }
 
-#title {
-    font-family: 'Pacifico', cursive;
-    padding-bottom: 20px;
+.miniBurgers {
+ 
 }
 
 .devouredBurger {
+    font-family:'Open Sans Condensed', sans-serif;
     height: 30px;
     background: #fff;
     margin: 3px;
@@ -66,6 +63,7 @@ h2 {
 }
 
 .newBurger {
+    font-family:'Open Sans Condensed', sans-serif;
     height: 30px;
     background: #fff;
     margin: 3px;
@@ -77,5 +75,13 @@ h2 {
 
 #devour {
     display: inline-block;
- 
+     
+}
+
+#burger_name, #AddBtn, #name {
+    font-family: 'Nunito', sans-serif;
+}
+
+.create-update-form, .form  {
+    text-align: center
 }
