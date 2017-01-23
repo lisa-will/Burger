@@ -3,12 +3,12 @@ var burger = require("../models/burger.js");
 var express = require("express");
 var router = express.Router();
 
-router.get("/", function (req, res){
+router.get("/", function(req, res){
   res.redirect("/burgers");
 });
 
-router.get("/burgers", function (req, res){
-  burger.selectAll(function (data){
+router.get("/burgers", function(req, res){
+  burger.selectAll(function(data){
     var hbsObject = {
       burgers: data
     };
@@ -17,7 +17,7 @@ router.get("/burgers", function (req, res){
   });
 });
 
-router.post("/burgers/create", function (req, res){
+router.post("/burgers/create", function(req, res){
   console.log("burgers_controller.js burger_name is: " + reg.body.burger_name);
   burger.insertOne (
     req.body.burger_name,
@@ -26,7 +26,7 @@ router.post("/burgers/create", function (req, res){
   });
 });
 
-router.put("/burgers/update/:id", function (req, res){
+router.put("/burgers/update/:id", function(req, res){
 
   burger.updateOne(
     req.params.id,

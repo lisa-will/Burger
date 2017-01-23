@@ -3,7 +3,7 @@ var connection = require("../config/connection.js");
 
 // Object for all SQL statement functions
 var orm = {
-    selectAll: function (table_name, cd) {
+    selectAll: function(table_name, cb) {
         var queryString = "SELECT * FROM burgers";
         connection.query(queryString, [], function (error, result){
             if (error) {
@@ -14,11 +14,11 @@ var orm = {
         });
     },
 
-    insertOne: function (burger_name, cb){
+    insertOne: function(burger_name, cb){
         var queryString = "INSERT INTO burgers (burger_name) VALUEs (?)";
         console.log(queryString);
 
-        connection.query(queryString, [burger_name], function (error, result){
+        connection.query(queryString, [burger_name], function(error, result){
             if (error){
                 throw error;
             }
@@ -32,7 +32,7 @@ var orm = {
         
         console.log(queryString);
 
-        connection.query(queryString, [id], function (error, result){
+        connection.query(queryString, [id], function(error, result){
             if (error){
                 throw error;
             }
