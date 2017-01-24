@@ -1,13 +1,14 @@
  .animated { 
-            background-image: url("/img/burger.png"); 
+            background-image: url("https://ih0.redbubble.net/image.120877231.9934/sticker,375x360.u2.png"); 
+            background-size: 275px 275px;
             background-repeat: no-repeat;
-            background-position: center; 
-            padding-top:95px;
-            margin-bottom:60px;
-            -webkit-animation-duration: 1s;
-            animation-duration: 1s; 
-            -webkit-animation-fill-mode: both; 
-            animation-fill-mode: both; 
+            background-position: center;
+            padding-top:25%;
+            margin-bottom:0px;
+            -webkit-animation: 2s infinite;
+            animation: 2s infinite;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
          }
          
          @-webkit-keyframes bounce { 
@@ -33,7 +34,8 @@ body {
 
 h1, #title {
     font-family: 'Pacifico', cursive;
-    padding-bottom: 20px;
+    font-size: 55px;
+    padding: 10px;
     text-align: center;
 }
 
@@ -42,13 +44,13 @@ h2 {
     text-align: center;
 }
 
-.Burgers {
+/*.Burgers {
 
 }
 
 .miniBurgers {
  
-}
+}*/
 
 .devouredBurger {
     font-family:'Open Sans Condensed', sans-serif;
