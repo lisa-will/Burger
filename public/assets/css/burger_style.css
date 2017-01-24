@@ -58,8 +58,8 @@ h2 {
     text-align: center;
     padding: 3px;
     color: #d3d3d3;
-    width: 90%;
-    margin-left: 30px;
+    width: 40%;
+    margin-left: 30%;
 }
 
 .newBurger {
@@ -67,10 +67,10 @@ h2 {
     height: 30px;
     background: #fff;
     margin: 3px;
-    text-align: left;
+    text-align: center;
     padding: 3px;
-    width: 70%;
-    margin-left: 30px;
+    width: 40%;
+    margin-left: 30%;
 }
 
 #devour {
@@ -78,10 +78,8 @@ h2 {
      
 }
 
-#burger_name, #AddBtn, #name {
-    font-family: 'Nunito', sans-serif;
-}
-
-.create-update-form, .form  {
-    text-align: center
+#burger_name, #AddBtn, #name, .create-update-form, .form {
+    font-family:'Open Sans Condensed', sans-serif;
+    font-size: 16px;
+    text-align: center;
 }
