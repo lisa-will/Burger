@@ -15,7 +15,7 @@
 
                 {{this.burger_name}}
 
-                <form id="devour" action="burgers/update/{{this.id}}?_method_PUT" method="POST">
+                <form id="devour" action="burgers/update/{{this.id}}?_method=PUT" method="POST">
                 <input type="hidden" name="devoured" value="1">
                 <button type="submit">"Devour it!"</button>
                 </form>
@@ -27,7 +27,7 @@
 
             <div class="col-md-12">
                 <h2>Add a Burger!</h2>
-                <form class="create-update-form" action="burgers/create">
+                <form class="create-update-form" action="burgers/create" method="post">
 
                 <div class="form-group">
                     <label for="burger_name" id="name">Burger:</label>
